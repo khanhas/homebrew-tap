@@ -26,7 +26,7 @@ class SpicetifyCli < Formula
     cd buildpath do
       system "go", "build", "-o", "spicetify"
       bin.install "spicetify"
-      system "cp", "-r", "./Themes", "./Extensions", "./globals.d.ts", bin
+      system "cp", "-r", "./jsHelper", "./Themes", "./Extensions", "./globals.d.ts", bin
       prefix.install_metafiles
     end
   end
