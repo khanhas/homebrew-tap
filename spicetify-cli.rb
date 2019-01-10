@@ -11,13 +11,11 @@ class SpicetifyCli < Formula
   end
 
   go_resource "gopkg.in/cheggaaa/pb.v2" do
-    url "https://gopkg.in/cheggaaa/pb.v2",
-      :revision => "4d4459d942fa4ac4f80dcc7eed28b0fb436f894cf3611e9ab4b8cfdc5f4af29b"
+    url "https://gopkg.in/cheggaaa/pb.v2"
   end
 
   go_resource "gopkg.in/mattn/go-colorable.v0" do
-    url "https://gopkg.in/mattn/go-colorable.v0",
-      :revision => "fbf40f3190901d2efa5e488890e127e575763572f292f90c2bc151e4d3d94277"
+    url "https://gopkg.in/mattn/go-colorable.v0"
   end
 
   def install
@@ -28,9 +26,7 @@ class SpicetifyCli < Formula
     cd buildpath do
       system "go", "build", "-o", "spicetify"
       bin.install "spicetify"
-      cp "-r", "./Extensions", bin
-      cp "-r", "./Themes", bin
-      cp "./globals.d.ts", biin
+      system "cp", "-r", "./Themes", "./Extensions", "./globals.d.ts", bin
       prefix.install_metafiles
     end
   end
