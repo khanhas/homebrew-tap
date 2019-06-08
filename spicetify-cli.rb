@@ -1,8 +1,8 @@
 class SpicetifyCli < Formula
   desc "Command-line tool to customize Spotify client"
   homepage "https://github.com/khanhas/spicetify-cli"
-  url "https://github.com/khanhas/spicetify-cli/archive/v0.8.1.tar.gz"
-  sha256 "611c8b1c31a95ed013b4e17a6edebf9a61f54a92219a3c6dfab0493a11f45472"
+  url "https://github.com/khanhas/spicetify-cli/archive/v0.9.0.tar.gz"
+  sha256 "60b533c91eb6132e091104e87fe30e972f6fcff3496a7de95bef357bfb1dc6ec"
   depends_on "go" => :build
 
   def install
