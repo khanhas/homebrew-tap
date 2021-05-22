@@ -17,6 +17,7 @@ class SpicetifyCli < Formula
       cp_r "./Themes", bin
       cp_r "./Extensions", bin
       cp_r "./CustomApps", bin
+      cp_r "./css-map.json", bin
     end
   end
 
