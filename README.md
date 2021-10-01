@@ -1,6 +1,6 @@
 # homebrew-spicetify-cli
 
-*[spicetify-cli](https://github.com/khanhas/spicetify-cli)s homebrew tap*
+*[spicetify-cli](https://github.com/khanhas/spicetify-cli)'s homebrew tap*
 
 ## Installation
 
