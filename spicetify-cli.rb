@@ -10,7 +10,7 @@ class SpicetifyCli < Formula
     buildpath.install
 
     cd buildpath do
-      system "go", "build", "-o", "spicetify"
+      system "go", "build", "-ldflags", "\"-X main.version=" + version.to_s + "\"", "-o", "spicetify"
       bin.install "spicetify"
       cp_r "./globals.d.ts", bin
       cp_r "./jsHelper", bin
